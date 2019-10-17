@@ -25,3 +25,12 @@ const EXTENDED_IMAGE = document.querySelector('#media-viewer img')
 const EXTENDED_VIDEO = document
   .querySelector('.video-container video')
   .getAttribute('src')
+
+export default {
+  OVERLAY_IMAGE,
+  OVERLAY_IMAGE_CAROUSEL,
+  OVERLAY_VIDEO,
+  OVERLAY_VIDEO_CAROUSEL,
+  EXTENDED_IMAGE,
+  EXTENDED_VIDEO
+}
