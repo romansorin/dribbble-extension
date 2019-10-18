@@ -1,11 +1,10 @@
 {
   "name": "Dribbble Image Downloader",
   "version": "0.0.1",
-  "manifest_version": 2,
   "description": "Quickly and easily download shots off of Dribbble",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": true
+  "permissions": ["downloads", "<all_urls>"],
+  "browser_action": {
+    "default_popup": "popup.html"
   },
-  "permissions": ["activeTab", "*://*/*", "tabs"]
+  "manifest_version": 2
 }
