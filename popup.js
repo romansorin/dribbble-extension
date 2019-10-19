@@ -1,5 +1,7 @@
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-  document.getElementById('link').innerText = request.link
+  request.link.map(link => {
+    document.body.appendChild(`<p>${link}</p>`)
+  })
 })
 
 window.onload = function () {
